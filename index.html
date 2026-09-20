@@ -1,65 +1,581 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cayden Clemmer — Mechanical Engineering</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cayden Clemmer — Mechanical Design &amp; CAD</title>
+<meta name="description" content="Mechanical engineering student at Virginia Commonwealth University. SolidWorks assemblies, sectioned engine models, and a NASA Space Apps research project. Seeking a Summer 2027 internship.">
+<meta name="author" content="Cayden Clemmer">
+<link rel="canonical" href="https://clemmer-c.github.io/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cayden Clemmer — Mechanical Design &amp; CAD">
+<meta property="og:description" content="Twenty-three parts, four stages, one cut plane. SolidWorks assemblies and engineering case studies.">
+<meta property="og:url" content="https://clemmer-c.github.io/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#EFE6D6">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<script>document.documentElement.classList.add('js');</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Cayden Clemmer",
+  "jobTitle": "Mechanical Engineering Student",
+  "email": "mailto:clemmer.cayden@gmail.com",
+  "telephone": "+1-703-209-0500",
+  "url": "https://clemmer-c.github.io/",
+  "sameAs": [
+    "https://www.linkedin.com/in/cayden-clemmer-7540b142b/",
+    "https://github.com/clemmer-c"
+  ],
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Virginia Commonwealth University" },
+  "knowsAbout": ["SolidWorks", "Autodesk Inventor", "Onshape", "CAD", "3D printing", "Mechanical design"],
+  "address": { "@type": "PostalAddress", "addressLocality": "Alexandria", "addressRegion": "VA", "addressCountry": "US" }
+}
+</script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
-<header class="site-header">
-  <div class="container">
-    <span class="brand">Cayden Clemmer</span>
-    <nav class="main-nav">
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="mailto:clemmer.cayden@gmail.com">Contact</a>
+<!-- ============================================================== NAV === -->
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a class="nav__mark" href="/">Cayden Clemmer</a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+      <svg width="20" height="14" viewBox="0 0 20 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M1 1h18M1 7h18M1 13h12"/></svg>
+    </button>
+    <nav class="nav__links" id="nav-links" data-open="false" aria-label="Primary">
+      <a class="nav__link" href="#work">Work</a>
+      <a class="nav__link" href="#about">About</a>
+      <a class="nav__link" href="#certifications">Certifications</a>
+      <a class="nav__link" href="resume.html">Résumé</a>
+      <a class="btn btn--primary btn--sm" href="#contact">Hire me</a>
     </nav>
   </div>
 </header>
 
-<main>
-  <div class="container">
+<main id="main">
 
-    <section class="hero">
-      <h1>I design and build mechanical systems.</h1>
-      <p class="lead">Mechanical engineering student with hands-on CAD experience in Autodesk Inventor, Onshape, and SolidWorks — designing, modeling, and 3D printing functional parts and assemblies.</p>
-      <div class="btn-group">
-        <a class="btn primary" href="projects.html">View Projects</a>
-        <!-- Upload your resume PDF to this repo and name it resume.pdf so this link works -->
-        <a class="btn" href="resume.pdf">Résumé</a>
-        <a class="btn" href="mailto:clemmer.cayden@gmail.com">Email Me</a>
-      </div>
-    </section>
+<!-- ============================================================= HERO === -->
+<section class="hero">
+  <div class="hero__copy stagger">
+    <p class="pill"><span class="pill__dot"></span>Seeking Summer 2027 internships</p>
 
-    <section style="margin-top:56px;">
-      <h2 style="font-size:1.3rem; margin-bottom:4px;">Featured project</h2>
-      <div class="featured">
-        <h3>Turbofan Jet Engine — SolidWorks</h3>
-        <p>Turbofan jet engine, fully assembled and 1/3 section cut for internal viewing, built from 23 parts in SolidWorks 2026.</p>
-        <a href="project-turbofan-engine.html">See full project →</a>
-      </div>
-    </section>
+    <h1 class="display hero__title">Mechanical design,<br>down to the mate.</h1>
 
-    <section style="margin-top:44px;">
-      <h2 style="font-size:1.3rem; margin-bottom:4px;">Certifications</h2>
-      <div class="cert-list" id="cert-list"></div>
-    </section>
+    <p class="lede hero__lede">I model combustion and turbofan engine assemblies in SolidWorks — part by part, mate by mate — then section them open so the architecture is legible instead of hidden. Right now I'm leading a three-person team building a public sky-browser on NASA's SPHEREx survey data.</p>
 
+    <div class="hero__ctas">
+      <a class="btn btn--primary" href="#work">See the work</a>
+      <a class="btn btn--ghost" href="resume.html">Résumé (PDF)</a>
+      <a class="hero__email" href="mailto:clemmer.cayden@gmail.com">clemmer.cayden@gmail.com</a>
+    </div>
+
+    <ul class="proofbar">
+      <li>23-part assembly</li>
+      <li>SolidWorks 2026</li>
+      <li>NASA Space Apps 2026 — team lead</li>
+      <li>4 yrs self-employed</li>
+    </ul>
   </div>
+
+  <figure class="hero__panel reveal">
+    <div class="panel__bar">
+      <span class="panel__num">01</span>
+      <span class="mono">Featured build</span>
+    </div>
+    <div class="panel__art">
+      <svg viewBox="0 0 600 400" role="img" aria-label="Cross-section schematic of a turbofan jet engine showing fan, compressor, combustor and turbine stages with a one-third section cut">
+        <defs>
+          <pattern id="hatchHero" width="7" height="7" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+            <line x1="0" y1="0" x2="0" y2="7" stroke="#2E2013" stroke-opacity="0.22" stroke-width="1"/>
+          </pattern>
+        </defs>
+        <path d="M160 128 C 260 112, 360 110, 442 126 L 442 196 L 160 196 Z" fill="url(#hatchHero)"/>
+        <path class="ink-line" d="M70 120 C 160 96, 320 94, 440 118 L 522 156" fill="none" stroke="#2E2013" stroke-width="1.6" stroke-linecap="round"/>
+        <path class="ink-line" d="M70 280 C 160 304, 320 306, 440 282 L 522 244" fill="none" stroke="#2E2013" stroke-width="1.6" stroke-linecap="round"/>
+        <line x1="70" y1="120" x2="70" y2="280" stroke="#2E2013" stroke-width="1.6"/>
+        <line x1="522" y1="156" x2="522" y2="244" stroke="#2E2013" stroke-width="1.6"/>
+        <path d="M162 168 C 250 158, 340 158, 412 172 L 460 186" fill="none" stroke="#52402A" stroke-width="1.2"/>
+        <path d="M162 232 C 250 242, 340 242, 412 228 L 460 214" fill="none" stroke="#52402A" stroke-width="1.2"/>
+        <line x1="40" y1="200" x2="560" y2="200" stroke="#A8481F" stroke-width="0.9" stroke-dasharray="14 5 3 5" stroke-opacity="0.8"/>
+        <line x1="88" y1="200" x2="462" y2="200" stroke="#2E2013" stroke-width="3"/>
+        <g stroke="#2E2013" stroke-width="1.6" stroke-linecap="round">
+          <line x1="84" y1="196" x2="96" y2="126"/><line x1="84" y1="196" x2="92" y2="146"/><line x1="84" y1="196" x2="88" y2="168"/>
+          <line x1="84" y1="204" x2="96" y2="274"/><line x1="84" y1="204" x2="92" y2="254"/><line x1="84" y1="204" x2="88" y2="232"/>
+        </g>
+        <g stroke="#2E2013" stroke-width="1.3">
+          <line x1="182" y1="176" x2="182" y2="194"/><line x1="182" y1="206" x2="182" y2="224"/>
+          <line x1="200" y1="178" x2="200" y2="194"/><line x1="200" y1="206" x2="200" y2="222"/>
+          <line x1="218" y1="180" x2="218" y2="194"/><line x1="218" y1="206" x2="218" y2="220"/>
+          <line x1="236" y1="181" x2="236" y2="194"/><line x1="236" y1="206" x2="236" y2="219"/>
+          <line x1="254" y1="183" x2="254" y2="194"/><line x1="254" y1="206" x2="254" y2="217"/>
+          <line x1="272" y1="184" x2="272" y2="194"/><line x1="272" y1="206" x2="272" y2="216"/>
+        </g>
+        <path d="M296 172 h56 a12 12 0 0 1 12 12 v6 a12 12 0 0 1 -12 12 h-56 a12 12 0 0 1 -12 -12 v-6 a12 12 0 0 1 12 -12 z" fill="none" stroke="#A8481F" stroke-width="1.5"/>
+        <path d="M296 198 h56 a12 12 0 0 1 12 12 v6 a12 12 0 0 1 -12 12 h-56 a12 12 0 0 1 -12 -12 v-6 a12 12 0 0 1 12 -12 z" fill="none" stroke="#A8481F" stroke-width="1.5"/>
+        <g stroke="#2E2013" stroke-width="1.3">
+          <line x1="386" y1="180" x2="386" y2="194"/><line x1="386" y1="206" x2="386" y2="220"/>
+          <line x1="404" y1="178" x2="404" y2="194"/><line x1="404" y1="206" x2="404" y2="222"/>
+          <line x1="422" y1="176" x2="422" y2="194"/><line x1="422" y1="206" x2="422" y2="224"/>
+          <line x1="440" y1="174" x2="440" y2="194"/><line x1="440" y1="206" x2="440" y2="226"/>
+        </g>
+        <path d="M462 184 L 520 200 L 462 216" fill="none" stroke="#2E2013" stroke-width="1.5" stroke-linejoin="round"/>
+        <path d="M108 142 L 300 138" fill="none" stroke="#6B5539" stroke-width="0.9" stroke-dasharray="3 6"/>
+        <path d="M108 258 L 300 262" fill="none" stroke="#6B5539" stroke-width="0.9" stroke-dasharray="3 6"/>
+        <g stroke="#6B5539" stroke-width="0.8">
+          <line x1="90" y1="112" x2="90" y2="72"/><line x1="228" y1="168" x2="228" y2="66"/>
+          <line x1="324" y1="234" x2="324" y2="330"/><line x1="412" y1="166" x2="412" y2="88"/>
+          <line x1="498" y1="250" x2="498" y2="320"/>
+        </g>
+        <g font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" letter-spacing="1.4" fill="#52402A">
+          <text x="90" y="62" text-anchor="middle">FAN</text>
+          <text x="228" y="56" text-anchor="middle">COMPRESSOR</text>
+          <text x="324" y="344" text-anchor="middle">COMBUSTOR</text>
+          <text x="412" y="78" text-anchor="middle">TURBINE</text>
+          <text x="498" y="334" text-anchor="middle">NOZZLE</text>
+        </g>
+        <text x="586" y="42" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" letter-spacing="1.6" fill="#A8481F">SECTION CUT — ONE THIRD</text>
+      </svg>
+    </div>
+    <figcaption class="panel__caption">
+      <h2><a href="projects/turbofan-jet-engine.html">Turbofan Jet Engine</a></h2>
+      <p class="mono" style="margin-top:8px">23 parts · SolidWorks 2026 · sectioned</p>
+    </figcaption>
+  </figure>
+</section>
+
+<!-- ============================================================= WORK === -->
+<section class="work" id="work">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-head__row">
+        <span class="mono mono--accent">Selected work — 2021 / 2026</span>
+        <span class="mono">04 projects</span>
+      </div>
+      <h2 class="display section-title">Four builds. Four different kinds of hard.</h2>
+    </div>
+
+    <!-- 01 -->
+    <article class="proj reveal">
+      <p class="proj__num">01</p>
+      <div class="proj__body">
+        <div class="proj__meta"><span class="mono">SolidWorks 2026 · 23 parts · 2026</span></div>
+        <h3 class="display proj__title"><a href="projects/turbofan-jet-engine.html">Turbofan Jet Engine</a></h3>
+        <p class="proj__desc">A complete turbofan — fan, compressor, combustor, turbine — assembled stage by stage with mates that hold across every interface. Then a precision cut removes one third of the assembly so the internal architecture reads at a glance, with part relationships intact across the cut plane.</p>
+        <ul class="tags">
+          <li class="tag">Assembly modeling</li>
+          <li class="tag">Section views</li>
+          <li class="tag">Mate schemes</li>
+        </ul>
+        <a class="arrow-link" href="projects/turbofan-jet-engine.html">Read the case study <span aria-hidden="true">→</span></a>
+      </div>
+
+      <figure class="frame embed" data-loaded="false">
+        <div class="frame__bar">
+          <span class="mono">Turbofan assembly</span>
+          <span class="mono">3D</span>
+        </div>
+        <div class="frame__art">
+          <svg viewBox="0 0 600 340" role="img" aria-label="Turbofan engine outline with a one-third section cut">
+            <defs>
+              <pattern id="hatch01" width="7" height="7" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+                <line x1="0" y1="0" x2="0" y2="7" stroke="#2E2013" stroke-opacity="0.2" stroke-width="1"/>
+              </pattern>
+            </defs>
+            <path d="M160 98 C 260 82, 360 80, 442 96 L 442 166 L 160 166 Z" fill="url(#hatch01)"/>
+            <path d="M70 90 C 160 66, 320 64, 440 88 L 522 126" fill="none" stroke="#2E2013" stroke-width="1.6"/>
+            <path d="M70 250 C 160 274, 320 276, 440 252 L 522 214" fill="none" stroke="#2E2013" stroke-width="1.6"/>
+            <line x1="70" y1="90" x2="70" y2="250" stroke="#2E2013" stroke-width="1.6"/>
+            <line x1="522" y1="126" x2="522" y2="214" stroke="#2E2013" stroke-width="1.6"/>
+            <path d="M162 138 C 250 128, 340 128, 412 142 L 460 156" fill="none" stroke="#52402A" stroke-width="1.2"/>
+            <path d="M162 202 C 250 212, 340 212, 412 198 L 460 184" fill="none" stroke="#52402A" stroke-width="1.2"/>
+            <line x1="40" y1="170" x2="560" y2="170" stroke="#A8481F" stroke-width="0.9" stroke-dasharray="14 5 3 5"/>
+            <line x1="88" y1="170" x2="462" y2="170" stroke="#2E2013" stroke-width="3"/>
+            <g stroke="#2E2013" stroke-width="1.6" stroke-linecap="round">
+              <line x1="84" y1="166" x2="96" y2="96"/><line x1="84" y1="166" x2="92" y2="116"/>
+              <line x1="84" y1="174" x2="96" y2="244"/><line x1="84" y1="174" x2="92" y2="224"/>
+            </g>
+            <g stroke="#2E2013" stroke-width="1.3">
+              <line x1="190" y1="148" x2="190" y2="164"/><line x1="190" y1="176" x2="190" y2="192"/>
+              <line x1="214" y1="150" x2="214" y2="164"/><line x1="214" y1="176" x2="214" y2="190"/>
+              <line x1="238" y1="151" x2="238" y2="164"/><line x1="238" y1="176" x2="238" y2="189"/>
+              <line x1="262" y1="153" x2="262" y2="164"/><line x1="262" y1="176" x2="262" y2="187"/>
+            </g>
+            <path d="M296 142 h56 a12 12 0 0 1 12 12 v6 a12 12 0 0 1 -12 12 h-56 a12 12 0 0 1 -12 -12 v-6 a12 12 0 0 1 12 -12 z" fill="none" stroke="#A8481F" stroke-width="1.5"/>
+            <path d="M296 168 h56 a12 12 0 0 1 12 12 v6 a12 12 0 0 1 -12 12 h-56 a12 12 0 0 1 -12 -12 v-6 a12 12 0 0 1 12 -12 z" fill="none" stroke="#A8481F" stroke-width="1.5"/>
+            <g stroke="#2E2013" stroke-width="1.3">
+              <line x1="392" y1="150" x2="392" y2="164"/><line x1="392" y1="176" x2="392" y2="190"/>
+              <line x1="416" y1="148" x2="416" y2="164"/><line x1="416" y1="176" x2="416" y2="192"/>
+              <line x1="440" y1="146" x2="440" y2="164"/><line x1="440" y1="176" x2="440" y2="194"/>
+            </g>
+            <path d="M462 154 L 520 170 L 462 186" fill="none" stroke="#2E2013" stroke-width="1.5" stroke-linejoin="round"/>
+            <text x="586" y="34" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" letter-spacing="1.6" fill="#A8481F">SECTION CUT — ONE THIRD</text>
+          </svg>
+        </div>
+        <button class="btn btn--primary btn--sm embed__load" type="button">Load 3D model</button>
+        <iframe class="embed__frame" title="Turbofan jet engine assembly — interactive 3D model"
+          data-src="https://sketchfab.com/models/11053a61d196462892917aaaed32c768/embed?autostart=1&amp;ui_theme=dark"
+          allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen loading="lazy"></iframe>
+      </figure>
+    </article>
+
+    <!-- 02 -->
+    <article class="proj reveal">
+      <p class="proj__num">02</p>
+      <div class="proj__body">
+        <div class="proj__meta"><span class="mono">SolidWorks 2026 · four-stroke · 2026</span></div>
+        <h3 class="display proj__title"><a href="projects/inline-four-engine.html">Inline Four Engine</a></h3>
+        <p class="proj__desc">Cylinder block, pistons, crankshaft and valvetrain, each modeled as its own component and mated individually rather than faked as one body. The internals are configured to interact mechanically, so the four-stroke cycle resolves instead of just looking like it would.</p>
+        <ul class="tags">
+          <li class="tag">Kinematics</li>
+          <li class="tag">Part modeling</li>
+          <li class="tag">Valvetrain</li>
+        </ul>
+        <a class="arrow-link" href="projects/inline-four-engine.html">Read the case study <span aria-hidden="true">→</span></a>
+      </div>
+
+      <figure class="frame embed" data-loaded="false">
+        <div class="frame__bar">
+          <span class="mono">Inline assembly</span>
+          <span class="mono">3D</span>
+        </div>
+        <div class="frame__art">
+          <svg viewBox="0 0 600 340" role="img" aria-label="Inline four cylinder engine schematic showing block, pistons, connecting rods, crankshaft and camshaft">
+            <rect x="96" y="44" width="408" height="46" fill="none" stroke="#2E2013" stroke-width="1.6"/>
+            <g stroke="#52402A" stroke-width="1.2" fill="none">
+              <circle cx="162" cy="67" r="13"/><circle cx="262" cy="67" r="13"/>
+              <circle cx="362" cy="67" r="13"/><circle cx="462" cy="67" r="13"/>
+            </g>
+            <line x1="96" y1="67" x2="504" y2="67" stroke="#A8481F" stroke-width="0.9" stroke-dasharray="12 4 2 4"/>
+            <rect x="96" y="90" width="408" height="150" fill="none" stroke="#2E2013" stroke-width="1.6"/>
+            <g fill="none" stroke="#52402A" stroke-width="1.1">
+              <rect x="126" y="90" width="72" height="150"/><rect x="226" y="90" width="72" height="150"/>
+              <rect x="326" y="90" width="72" height="150"/><rect x="426" y="90" width="72" height="150"/>
+            </g>
+            <g fill="none" stroke="#2E2013" stroke-width="1.5">
+              <rect x="130" y="104" width="64" height="34"/><rect x="230" y="176" width="64" height="34"/>
+              <rect x="330" y="150" width="64" height="34"/><rect x="430" y="118" width="64" height="34"/>
+            </g>
+            <circle cx="300" cy="278" r="34" fill="none" stroke="#2E2013" stroke-width="1.6"/>
+            <circle cx="300" cy="278" r="5" fill="#2E2013"/>
+            <line x1="96" y1="278" x2="504" y2="278" stroke="#A8481F" stroke-width="0.9" stroke-dasharray="12 4 2 4"/>
+            <g stroke="#2E2013" stroke-width="1.6" stroke-linecap="round">
+              <line x1="162" y1="138" x2="288" y2="252"/><line x1="262" y1="210" x2="308" y2="256"/>
+              <line x1="362" y1="184" x2="316" y2="254"/><line x1="462" y1="152" x2="322" y2="262"/>
+            </g>
+            <g fill="none" stroke="#52402A" stroke-width="1.3">
+              <circle cx="288" cy="252" r="7"/><circle cx="308" cy="256" r="7"/>
+              <circle cx="316" cy="254" r="7"/><circle cx="322" cy="262" r="7"/>
+            </g>
+            <g font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" letter-spacing="1.4" fill="#52402A">
+              <text x="60" y="70">CAM</text><text x="60" y="120">BORE</text>
+              <text x="540" y="282" text-anchor="end">CRANK</text>
+            </g>
+            <g font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9" letter-spacing="1.2" fill="#A8481F">
+              <text x="300" y="326" text-anchor="middle">FOUR-STROKE · 4 CYLINDERS</text>
+            </g>
+          </svg>
+        </div>
+        <button class="btn btn--primary btn--sm embed__load" type="button">Load 3D model</button>
+        <iframe class="embed__frame" title="Inline four engine assembly — interactive 3D model"
+          data-src="https://sketchfab.com/models/87bb1cb8cc1946308711f0517beaec0e/embed?autostart=1&amp;ui_theme=dark"
+          allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen loading="lazy"></iframe>
+      </figure>
+    </article>
+
+    <!-- 03 -->
+    <article class="proj reveal">
+      <p class="proj__num">03</p>
+      <div class="proj__body">
+        <div class="proj__meta">
+          <span class="mono">NASA Space Apps 2026 · team lead of 3</span>
+          <span class="status"><span class="status__dot"></span>Due 15 Nov 2026</span>
+        </div>
+        <h3 class="display proj__title"><a href="projects/planet-x.html">Planet X</a></h3>
+        <p class="proj__desc">Since 2025, NASA's SPHEREx mission has mapped the entire sky every six months in 102 bands of near-infrared light — over a billion objects, many of which give themselves away by shifting position between passes. Comets, asteroids, brown dwarfs, whole new planets. We're building the public web tool that lets anyone see that movement without a research account.</p>
+        <ul class="tags">
+          <li class="tag">SPHEREx imagery</li>
+          <li class="tag">Web tool</li>
+          <li class="tag">Leading a team</li>
+        </ul>
+        <a class="arrow-link" href="projects/planet-x.html">Follow the build <span aria-hidden="true">→</span></a>
+      </div>
+
+      <figure class="frame">
+        <div class="frame__bar">
+          <span class="mono">Sky browser — epoch scrubber</span>
+          <span class="mono">Concept</span>
+        </div>
+        <div class="frame__art">
+          <svg viewBox="0 0 600 360" role="img" aria-label="Three sky-survey frames six months apart: fixed stars stay put while one tracked object shifts position between passes, above a strip of 102 near-infrared bands and a timeline scrubber">
+            <defs>
+              <pattern id="bandsPX" width="6" height="30" patternUnits="userSpaceOnUse">
+                <line x1="1.5" y1="0" x2="1.5" y2="30" stroke="#2E2013" stroke-opacity="0.38" stroke-width="2"/>
+              </pattern>
+            </defs>
+            <circle cx="34" cy="18" r="4" fill="#A8481F"/>
+            <text x="44" y="22" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9" letter-spacing="1.2" fill="#52402A">THIS PASS</text>
+            <circle cx="150" cy="18" r="3.4" fill="none" stroke="#A8481F" stroke-width="1.3" stroke-opacity="0.6"/>
+            <text x="160" y="22" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9" letter-spacing="1.2" fill="#52402A">EARLIER</text>
+            <circle cx="262" cy="18" r="2" fill="#52402A"/>
+            <text x="272" y="22" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9" letter-spacing="1.2" fill="#52402A">FIXED STARS</text>
+
+            <g transform="translate(30,36)">
+              <rect x="0" y="0" width="170" height="170" fill="#EFE6D6" stroke="#2E2013" stroke-width="1.4"/>
+              <g fill="#52402A">
+                <circle cx="22" cy="30" r="1.8"/><circle cx="58" cy="18" r="1.2"/><circle cx="96" cy="42" r="2.4"/><circle cx="134" cy="26" r="1.4"/>
+                <circle cx="38" cy="74" r="1.6"/><circle cx="112" cy="88" r="1.3"/><circle cx="150" cy="66" r="2"/><circle cx="28" cy="120" r="1.2"/>
+                <circle cx="72" cy="140" r="2.2"/><circle cx="126" cy="132" r="1.5"/><circle cx="152" cy="148" r="1.1"/>
+              </g>
+              <circle cx="48" cy="52" r="9" fill="none" stroke="#A8481F" stroke-width="1" stroke-opacity="0.5"/>
+              <circle cx="48" cy="52" r="4.5" fill="#A8481F"/>
+            </g>
+            <g transform="translate(210,36)">
+              <rect x="0" y="0" width="170" height="170" fill="#EFE6D6" stroke="#2E2013" stroke-width="1.4"/>
+              <g fill="#52402A">
+                <circle cx="22" cy="30" r="1.8"/><circle cx="58" cy="18" r="1.2"/><circle cx="96" cy="42" r="2.4"/><circle cx="134" cy="26" r="1.4"/>
+                <circle cx="38" cy="74" r="1.6"/><circle cx="112" cy="88" r="1.3"/><circle cx="150" cy="66" r="2"/><circle cx="28" cy="120" r="1.2"/>
+                <circle cx="72" cy="140" r="2.2"/><circle cx="126" cy="132" r="1.5"/><circle cx="152" cy="148" r="1.1"/>
+              </g>
+              <line x1="48" y1="52" x2="78" y2="80" stroke="#A8481F" stroke-width="1.1" stroke-dasharray="3 4"/>
+              <circle cx="48" cy="52" r="3.4" fill="none" stroke="#A8481F" stroke-width="1.3" stroke-opacity="0.6"/>
+              <circle cx="78" cy="80" r="9" fill="none" stroke="#A8481F" stroke-width="1" stroke-opacity="0.5"/>
+              <circle cx="78" cy="80" r="4.5" fill="#A8481F"/>
+            </g>
+            <g transform="translate(390,36)">
+              <rect x="0" y="0" width="170" height="170" fill="#EFE6D6" stroke="#2E2013" stroke-width="1.4"/>
+              <g fill="#52402A">
+                <circle cx="22" cy="30" r="1.8"/><circle cx="58" cy="18" r="1.2"/><circle cx="96" cy="42" r="2.4"/><circle cx="134" cy="26" r="1.4"/>
+                <circle cx="38" cy="74" r="1.6"/><circle cx="112" cy="88" r="1.3"/><circle cx="150" cy="66" r="2"/><circle cx="28" cy="120" r="1.2"/>
+                <circle cx="72" cy="140" r="2.2"/><circle cx="126" cy="132" r="1.5"/><circle cx="152" cy="148" r="1.1"/>
+              </g>
+              <path d="M48 52 L78 80 L108 110" fill="none" stroke="#A8481F" stroke-width="1.1" stroke-dasharray="3 4"/>
+              <circle cx="48" cy="52" r="3.4" fill="none" stroke="#A8481F" stroke-width="1.3" stroke-opacity="0.6"/>
+              <circle cx="78" cy="80" r="3.4" fill="none" stroke="#A8481F" stroke-width="1.3" stroke-opacity="0.6"/>
+              <circle cx="108" cy="110" r="9" fill="none" stroke="#A8481F" stroke-width="1" stroke-opacity="0.5"/>
+              <circle cx="108" cy="110" r="4.5" fill="#A8481F"/>
+            </g>
+
+            <g font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" letter-spacing="1.3" fill="#6B5539">
+              <text x="115" y="226" text-anchor="middle">PASS 01 · +0 MO</text>
+              <text x="295" y="226" text-anchor="middle">PASS 02 · +6 MO</text>
+              <text x="475" y="226" text-anchor="middle">PASS 03 · +12 MO</text>
+            </g>
+
+            <rect x="30" y="248" width="530" height="28" fill="url(#bandsPX)" stroke="#2E2013" stroke-width="1.2"/>
+            <g font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9" letter-spacing="1.4" fill="#52402A">
+              <text x="30" y="292">102 NEAR-INFRARED BANDS</text>
+              <text x="560" y="292" text-anchor="end">0.75 – 5.0 µm</text>
+            </g>
+
+            <line x1="30" y1="322" x2="560" y2="322" stroke="#D6C7AC" stroke-width="3" stroke-linecap="round"/>
+            <line x1="30" y1="322" x2="475" y2="322" stroke="#2E2013" stroke-width="3" stroke-linecap="round"/>
+            <g fill="#6B5539"><circle cx="115" cy="322" r="2.5"/><circle cx="295" cy="322" r="2.5"/></g>
+            <circle cx="475" cy="322" r="7.5" fill="#A8481F"/>
+            <text x="295" y="350" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9" letter-spacing="1.6" fill="#6B5539">SCRUB THE TIMELINE — WATCH IT MOVE</text>
+          </svg>
+        </div>
+      </figure>
+    </article>
+
+    <!-- 04 -->
+    <article class="proj reveal">
+      <p class="proj__num">04</p>
+      <div class="proj__body">
+        <div class="proj__meta"><span class="mono">Self-employed · 2021 → present</span></div>
+        <h3 class="display proj__title"><a href="projects/lawn-care.html">Clemmer Lawn Care</a></h3>
+        <p class="proj__desc">Four years, five recurring clients, $4,000+ in revenue — and every part of it mine: routing, scheduling, pricing, equipment maintenance, basic accounting, and tracking the regulations that apply to the work. The CAD proves I can model a system. This proves I can run one.</p>
+        <ul class="tags">
+          <li class="tag">Operations</li>
+          <li class="tag">Client management</li>
+          <li class="tag">Equipment upkeep</li>
+        </ul>
+        <a class="arrow-link" href="projects/lawn-care.html">Read the case study <span aria-hidden="true">→</span></a>
+      </div>
+
+      <figure class="frame">
+        <div class="frame__bar">
+          <span class="mono">Service record — four seasons</span>
+          <span class="mono">2021–26</span>
+        </div>
+        <div class="frame__art">
+          <svg viewBox="0 0 600 340" role="img" aria-label="Diagram of a mowing pattern: a serpentine cut path inside a property boundary, beside figures for clients, seasons and revenue">
+            <rect x="70" y="40" width="330" height="230" fill="none" stroke="#2E2013" stroke-width="1.6"/>
+            <g stroke="#D6C7AC" stroke-width="12">
+              <line x1="82" y1="56" x2="388" y2="56"/><line x1="82" y1="82" x2="388" y2="82"/>
+              <line x1="82" y1="108" x2="388" y2="108"/><line x1="82" y1="134" x2="388" y2="134"/>
+              <line x1="82" y1="160" x2="388" y2="160"/><line x1="82" y1="186" x2="388" y2="186"/>
+              <line x1="82" y1="212" x2="388" y2="212"/><line x1="82" y1="238" x2="388" y2="238"/>
+            </g>
+            <path d="M86 56 H384 V82 H86 V108 H384 V134 H86 V160 H384 V186 H86 V212 H384 V238 H86" fill="none" stroke="#A8481F" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+            <circle cx="86" cy="56" r="5" fill="#A8481F"/>
+            <circle cx="86" cy="238" r="5" fill="none" stroke="#A8481F" stroke-width="1.8"/>
+            <g font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" letter-spacing="1.3" fill="#6B5539">
+              <text x="70" y="292">START</text>
+              <text x="400" y="292" text-anchor="end">FINISH · EDGE · BLOW</text>
+            </g>
+            <line x1="440" y1="40" x2="440" y2="270" stroke="#D6C7AC" stroke-width="1"/>
+            <g font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" letter-spacing="1.4" fill="#6B5539">
+              <text x="470" y="62">CLIENTS</text><text x="470" y="128">SEASONS</text><text x="470" y="194">REVENUE</text><text x="470" y="260">SERVICES</text>
+            </g>
+            <g font-family="'Instrument Serif', Georgia, serif" font-size="38" fill="#2E2013">
+              <text x="470" y="98">05</text><text x="470" y="164">04</text><text x="470" y="230">$4k+</text>
+            </g>
+            <text x="470" y="292" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9" letter-spacing="1.2" fill="#52402A">MOW · EDGE · AERATE · SEED</text>
+          </svg>
+        </div>
+      </figure>
+    </article>
+  </div>
+</section>
+
+<!-- =================================================== CERTIFICATIONS === -->
+<section id="certifications">
+  <div class="wrap certs">
+    <div class="certs__intro reveal">
+      <span class="mono mono--accent">Certifications</span>
+      <h2 class="display section-title" style="margin-top:20px">Proof I keep learning.</h2>
+      <p>A shelf, not a wall — it fills up as I earn them. Each one links to the credential so nobody has to take my word for it.</p>
+      <span class="mono certs__count">01 earned · grid expands</span>
+    </div>
+
+    <div class="cert-grid reveal">
+      <article class="cert">
+        <div class="cert__top">
+          <span class="mono">Google · Coursera</span>
+          <span class="cert__check" aria-hidden="true">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#A8481F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          </span>
+        </div>
+        <h3>Google AI Essentials</h3>
+        <p>Five-course specialization — prompting, workflow design and responsible use — applied straight back into how I research and document builds.</p>
+        <div class="cert__foot">
+          <span class="mono">Issued 19 Sep 2026</span>
+          <span class="cert__links">
+            <a href="https://coursera.org/verify/specialization/I2JENJXQHGG8" rel="noopener">Verify</a>
+            <a href="assets/docs/google-ai-essentials-certificate.pdf">PDF</a>
+          </span>
+        </div>
+      </article>
+
+      <article class="cert cert--next">
+        <span class="mono">Next up</span>
+        <h3>Certified SolidWorks Associate</h3>
+        <p>The credential recruiters actually recognise for the work already on this page. In progress — this card updates the day it lands.</p>
+        <div class="cert__foot"><span class="mono">Slot reserved</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ ABOUT === -->
+<section class="about" id="about">
+  <div class="wrap about__inner">
+    <div class="reveal">
+      <span class="mono">About</span>
+      <h2 class="display">I started modeling because I wanted to know how things come apart.</h2>
+      <p>That is still the whole thing. A section cut is just a way of asking a question out loud. I graduated Thomas A. Edison High School in Alexandria with an Advanced Diploma, IB certificates and the Governor's Seal of Excellence, and I spent four years running a lawn care business on the side — which taught me the unglamorous half of engineering: scheduling, upkeep, and finishing the job when nobody is checking.</p>
+      <p>I work in SolidWorks, Inventor and Onshape, print what I can, and I'm now reading for a B.S. in Mechanical Engineering at Virginia Commonwealth University.</p>
+    </div>
+
+    <dl class="facts reveal">
+      <div>
+        <dt>Studying</dt>
+        <dd>B.S. Mechanical Engineering, Virginia Commonwealth University</dd>
+      </div>
+      <div>
+        <dt>Based</dt>
+        <dd>Alexandria &amp; Richmond, Virginia</dd>
+      </div>
+      <div>
+        <dt>Software</dt>
+        <dd>SolidWorks · Autodesk Inventor · Onshape · 3D printing</dd>
+      </div>
+      <div>
+        <dt>Honors</dt>
+        <dd>Governor's Seal of Excellence · National Honor Society · Math Honor Society · CTE Certified</dd>
+      </div>
+      <div>
+        <dt>Languages</dt>
+        <dd>English (native) · French (professional)</dd>
+      </div>
+      <div>
+        <dt>Also</dt>
+        <dd>Varsity track &amp; cross country, 4 yrs · Chess Club founder &amp; co-president · Public Health Youth Ambassador, GMU · Soccer referee</dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<!-- ========================================================== CONTACT === -->
+<section class="contact" id="contact">
+  <div class="wrap contact__inner">
+    <div class="reveal" style="display:flex;flex-direction:column">
+      <span class="mono mono--accent">Contact</span>
+      <h2 class="display">Hiring? Let's talk.</h2>
+      <p>I'm looking for a Summer 2027 mechanical engineering internship — design, CAD, drafting, prototyping — and I'm open to earlier terms, co-ops and part-time work if the timing suits you better. I reply within a day, and I'll happily walk you through any assembly on this site live.</p>
+      <a class="contact__email" href="mailto:clemmer.cayden@gmail.com">clemmer.cayden@gmail.com</a>
+      <div class="contact__links">
+        <a href="tel:+17032090500">(703) 209-0500</a>
+        <a href="https://www.linkedin.com/in/cayden-clemmer-7540b142b/" rel="noopener">LinkedIn ↗</a>
+        <a href="https://github.com/clemmer-c" rel="noopener">GitHub ↗</a>
+      </div>
+    </div>
+
+    <div class="resume-card reveal" id="resume">
+      <span class="mono">Résumé · PDF · 1 page</span>
+      <div class="resume-card__body">
+        <div class="page-thumb" aria-hidden="true">
+          <i class="h"></i><i style="width:92%"></i><i style="width:84%"></i>
+          <i class="s"></i><i style="width:96%"></i><i style="width:88%"></i><i style="width:92%"></i>
+          <i class="s"></i><i style="width:90%"></i><i style="width:82%"></i><i style="width:94%"></i>
+        </div>
+        <div>
+          <h3>Read it in the browser</h3>
+          <p>Opens inline — no download required, no dead tab.</p>
+        </div>
+      </div>
+      <div class="resume-card__actions">
+        <a class="btn btn--primary" href="resume.html">View résumé</a>
+        <a class="btn btn--ghost" href="assets/docs/cayden-clemmer-resume.pdf" download>Download</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 </main>
 
-<footer class="site-footer">
-  <div class="container">
-    <span>&copy; 2026 Cayden Clemmer</span>
-    <span><a href="mailto:clemmer.cayden@gmail.com">clemmer.cayden@gmail.com</a></span>
+<!-- =========================================================== FOOTER === -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div>
+        <span class="footer__mark">Cayden Clemmer</span>
+        <span class="mono" style="display:block;margin-top:8px">Mechanical design · Alexandria, VA</span>
+      </div>
+      <nav class="footer__nav" aria-label="Footer">
+        <a class="nav__link" href="#work">Work</a>
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#certifications">Certifications</a>
+        <a class="nav__link" href="resume.html">Résumé</a>
+        <a class="nav__link" href="#contact">Contact</a>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <span class="mono">© <span data-year>2026</span> Cayden Clemmer</span>
+      <span class="mono">Designed &amp; built by hand</span>
+    </div>
   </div>
 </footer>
 
-<script src="certs.js"></script>
+<script src="assets/js/site.js" defer></script>
 </body>
 </html>

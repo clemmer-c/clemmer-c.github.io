@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inline Four Engine — Cayden Clemmer</title>
+<meta name="description" content="An inline four-cylinder engine modeled in SolidWorks 2026 with block, pistons, crankshaft and valvetrain mated as individual components.">
+<meta name="author" content="Cayden Clemmer">
+<link rel="canonical" href="https://clemmer-c.github.io/projects/inline-four-engine.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Inline Four Engine — Cayden Clemmer">
+<meta property="og:description" content="An inline four-cylinder engine modeled in SolidWorks 2026 with block, pistons, crankshaft and valvetrain mated as individual components.">
+<meta property="og:url" content="https://clemmer-c.github.io/projects/inline-four-engine.html">
+<meta name="theme-color" content="#EFE6D6">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a class="nav__mark" href="../index.html">Cayden Clemmer</a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+      <svg width="20" height="14" viewBox="0 0 20 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M1 1h18M1 7h18M1 13h12"/></svg>
+    </button>
+    <nav class="nav__links" id="nav-links" data-open="false" aria-label="Primary">
+      <a class="nav__link" href="../index.html#work">All work</a>
+      <a class="nav__link" href="../index.html#about">About</a>
+      <a class="nav__link" href="../index.html#certifications">Certifications</a>
+      <a class="nav__link" href="../resume.html">Résumé</a>
+      <a class="btn btn--primary btn--sm" href="../index.html#contact">Hire me</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="wrap case-hero stagger">
+  <div class="case-hero__kicker">
+    <span class="mono mono--accent">Project 02 / 04</span>
+    <span class="dash" aria-hidden="true"></span>
+    <span class="mono">SolidWorks 2026</span>
+    
+  </div>
+  <h1 class="display">Inline Four Engine</h1>
+  <p class="lede case-hero__lede">Four cylinders, one crankshaft, and a valvetrain that has to agree with both.</p>
+  <div class="meta-grid">
+      <div><span class="mono">Role</span><span>Sole designer</span></div>
+      <div><span class="mono">Configuration</span><span>Inline four, four-stroke</span></div>
+      <div><span class="mono">Year</span><span>2026</span></div>
+      <div><span class="mono">Deliverable</span><span>Functional assembly</span></div>
+  </div>
+</section>
+
+<section class="viewer">
+  <div class="viewer__bar">
+    <span class="mono">[ SketchFab — inline assembly ]</span>
+  </div>
+    <div class="viewer__stage">
+      <iframe title="Inline four engine assembly — interactive 3D model"
+        data-src="https://sketchfab.com/models/87bb1cb8cc1946308711f0517beaec0e/embed?autostart=1&amp;ui_theme=dark"
+        allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen loading="lazy"></iframe>
+    </div>
+</section>
+
+<section class="wrap block reveal">
+  <div class="block__head">
+    <span class="mono mono--accent">01 — The object</span>
+    <h2 class="display">What it is</h2>
+  </div>
+  <div class="block__body">
+    <p>An inline four-cylinder engine modeled in SolidWorks 2026 — cylinder block, pistons, crankshaft and valvetrain, each built as its own component and mated individually rather than shortcut into a single body.</p>
+    <p>What separates this from a model that merely looks like an engine is that the internal components are configured to interact mechanically. Turn the crank and the pistons follow through their real travel. That constraint is what made it worth building: it forced every clearance and every relationship to be correct rather than approximately correct, and it is the reason the four-stroke cycle reads as kinematics instead of as a picture.</p>
+  </div>
+</section>
+<section class="build">
+  <div class="wrap build__inner reveal">
+    <div class="build__head">
+      <div>
+        <span class="mono mono--accent">02 — The build</span>
+        <h2 class="display section-title" style="margin-top:20px">How I made it</h2>
+      </div>
+      <p>Build the thing that sets the dimensions first, then work outward. In an engine that means the block.</p>
+    </div>
+    <ol class="steps">
+      <li class="step">
+        <span class="step__num">01</span>
+        <h3>Start from the bore spacing</h3>
+        <p>The block fixes everything downstream — bore centres, deck height, main journal line. Get those wrong and every part after it inherits the error, so they get modeled and checked before anything else exists.</p>
+        <span class="mono step__tag">Datum</span>
+      </li>
+      <li class="step">
+        <span class="step__num">02</span>
+        <h3>Model the reciprocating set</h3>
+        <p>Piston, pin, rod and journal as separate parts with the clearances they actually need, so nothing is press-fit by accident when the assembly closes up.</p>
+        <span class="mono step__tag">Part modeling</span>
+      </li>
+      <li class="step">
+        <span class="step__num">03</span>
+        <h3>Constrain motion, not pose</h3>
+        <p>Mates that deliberately leave a degree of freedom, so the crank rotates and the pistons travel. Over-constraining is the instinct that makes an assembly look finished and hides every mistake in it.</p>
+        <span class="mono step__tag">Kinematics</span>
+      </li>
+      <li class="step step--final">
+        <span class="step__num">04</span>
+        <h3>Phase the valvetrain</h3>
+        <p>Cam and valves timed against crank position so intake, compression, power and exhaust land where they should across all four cylinders rather than each one being right in isolation.</p>
+        <span class="mono step__tag">Timing</span>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="wrap block reveal">
+  <div class="block__head">
+    <span class="mono mono--accent">03 — The takeaway</span>
+    <h2 class="display">How it grew me</h2>
+  </div>
+  <div class="block__body">
+    <blockquote class="quote">A static model only has to look right once. A moving one has to be right at every angle.</blockquote>
+    <p>The turbofan taught me to plan an assembly. This one taught me to leave it alone. My first instinct was to lock every part down until nothing could move — which feels like rigour and is actually the opposite, because a fully constrained assembly cannot tell you when two parts would collide. Deliberately leaving the crank free was the moment the model started checking my work instead of just displaying it.</p>
+    <p>It also gave me a much more physical understanding of the four-stroke cycle than any diagram had. You cannot phase a valvetrain you do not actually understand.</p>
+  </div>
+</section>
+<section class="specs">
+  <div class="wrap specs__inner reveal">
+    <span class="mono">Specification</span>
+    <dl>
+      <div><dt class="mono">Software</dt><dd>SolidWorks 2026</dd></div>
+      <div><dt class="mono">Configuration</dt><dd>Inline four, four-stroke</dd></div>
+      <div><dt class="mono">Components</dt><dd>Block · pistons · crankshaft · valvetrain</dd></div>
+      <div><dt class="mono">Motion</dt><dd>Mated for full-cycle travel</dd></div>
+      <div><dt class="mono">Viewer</dt><dd>SketchFab — orbit and zoom</dd></div>
+      <div><dt class="mono">Files</dt><dd>STEP / SLDASM on request</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="next">
+  <div class="wrap next__inner">
+    <a class="next__card" href="planet-x.html">
+      <span class="mono">Next project — 03 / 04</span>
+      <span class="next__title">Planet X</span>
+      <p>A public sky-browser on NASA&#x27;s SPHEREx survey data. In progress, due 15 November.</p>
+      <span class="go">Read the case study →</span>
+    </a>
+    <div class="next__cta">
+      <span class="mono">Or skip ahead</span>
+      <h2>Want me building this for your team?</h2>
+      <p>Seeking a Summer 2027 mechanical engineering internship — open to earlier terms.</p>
+      <div class="actions">
+        <a class="btn btn--light" href="../index.html#contact">Get in touch</a>
+        <a class="btn btn--outline-light" href="../resume.html">Résumé (PDF)</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div>
+        <a class="footer__mark" href="../index.html">Cayden Clemmer</a>
+        <span class="mono" style="display:block;margin-top:8px">Mechanical design · Alexandria, VA</span>
+      </div>
+      <nav class="footer__nav" aria-label="Footer">
+        <a class="nav__link" href="../index.html#work">Work</a>
+        <a class="nav__link" href="../index.html#about">About</a>
+        <a class="nav__link" href="../index.html#certifications">Certifications</a>
+        <a class="nav__link" href="../resume.html">Résumé</a>
+        <a class="nav__link" href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <span class="mono">© <span data-year>2026</span> Cayden Clemmer</span>
+      <span class="mono">Case study 02 of 04</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>

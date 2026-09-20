@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Turbofan Jet Engine — Cayden Clemmer</title>
+<meta name="description" content="A 23-part turbofan assembly modeled in SolidWorks 2026 and sectioned one third away to expose the internal architecture.">
+<meta name="author" content="Cayden Clemmer">
+<link rel="canonical" href="https://clemmer-c.github.io/projects/turbofan-jet-engine.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Turbofan Jet Engine — Cayden Clemmer">
+<meta property="og:description" content="A 23-part turbofan assembly modeled in SolidWorks 2026 and sectioned one third away to expose the internal architecture.">
+<meta property="og:url" content="https://clemmer-c.github.io/projects/turbofan-jet-engine.html">
+<meta name="theme-color" content="#EFE6D6">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a class="nav__mark" href="../index.html">Cayden Clemmer</a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+      <svg width="20" height="14" viewBox="0 0 20 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M1 1h18M1 7h18M1 13h12"/></svg>
+    </button>
+    <nav class="nav__links" id="nav-links" data-open="false" aria-label="Primary">
+      <a class="nav__link" href="../index.html#work">All work</a>
+      <a class="nav__link" href="../index.html#about">About</a>
+      <a class="nav__link" href="../index.html#certifications">Certifications</a>
+      <a class="nav__link" href="../resume.html">Résumé</a>
+      <a class="btn btn--primary btn--sm" href="../index.html#contact">Hire me</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="wrap case-hero stagger">
+  <div class="case-hero__kicker">
+    <span class="mono mono--accent">Project 01 / 04</span>
+    <span class="dash" aria-hidden="true"></span>
+    <span class="mono">SolidWorks 2026</span>
+    
+  </div>
+  <h1 class="display">Turbofan Jet Engine</h1>
+  <p class="lede case-hero__lede">Twenty-three parts, four stages, one cut plane. An assembly built to be understood, not just rendered.</p>
+  <div class="meta-grid">
+      <div><span class="mono">Role</span><span>Sole designer</span></div>
+      <div><span class="mono">Parts</span><span>23 individually modeled</span></div>
+      <div><span class="mono">Year</span><span>2026</span></div>
+      <div><span class="mono">Deliverable</span><span>Sectioned assembly</span></div>
+  </div>
+</section>
+
+<section class="viewer">
+  <div class="viewer__bar">
+    <span class="mono">[ SketchFab — final turbofan engine assembly ]</span>
+  </div>
+    <div class="viewer__stage">
+      <iframe title="Turbofan jet engine assembly — interactive 3D model"
+        data-src="https://sketchfab.com/models/11053a61d196462892917aaaed32c768/embed?autostart=1&amp;ui_theme=dark"
+        allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen loading="lazy"></iframe>
+    </div>
+</section>
+
+<section class="wrap block reveal">
+  <div class="block__head">
+    <span class="mono mono--accent">01 — The object</span>
+    <h2 class="display">What it is</h2>
+  </div>
+  <div class="block__body">
+    <p>A complete turbofan jet engine assembly, modeled in SolidWorks 2026 from twenty-three individually built parts, grouped into the four stages a real engine actually has: fan, compressor, combustion, turbine.</p>
+    <p>The point was never a pretty render. It was to build something whose interfaces hold — where every mate corresponds to a real relationship between two parts — and then to cut one third of it away so somebody who has never opened SolidWorks can look at it and see how thrust gets made. A section cut is the honest test of an assembly: if the internals were faked, the cut plane exposes it immediately.</p>
+  </div>
+</section>
+<section class="build">
+  <div class="wrap build__inner reveal">
+    <div class="build__head">
+      <div>
+        <span class="mono mono--accent">02 — The build</span>
+        <h2 class="display section-title" style="margin-top:20px">How I made it</h2>
+      </div>
+      <p>Four passes. The order mattered more than any single feature — get it wrong and the rebuild cost compounds.</p>
+    </div>
+    <ol class="steps">
+      <li class="step">
+        <span class="step__num">01</span>
+        <h3>Split it into stages</h3>
+        <p>Fan, compressor, combustor, turbine — each as its own subassembly, so mates stay local and the feature tree stays readable at part twenty-three instead of part six.</p>
+        <span class="mono step__tag">Structure</span>
+      </li>
+      <li class="step">
+        <span class="step__num">02</span>
+        <h3>Model to the interface</h3>
+        <p>Every part dimensioned against the face it actually meets, not against the origin. Blade roots to the disc, casing to the flange, shaft to the bearing seat.</p>
+        <span class="mono step__tag">Part modeling</span>
+      </li>
+      <li class="step">
+        <span class="step__num">03</span>
+        <h3>Mate stage by stage</h3>
+        <p>Coordinating mates across four stage interfaces, one boundary at a time, so interference shows up while it is still cheap to fix rather than at final assembly.</p>
+        <span class="mono step__tag">Assembly</span>
+      </li>
+      <li class="step step--final">
+        <span class="step__num">04</span>
+        <h3>Cut it open cleanly</h3>
+        <p>A precision section across one third of the assembly, placed to expose the core without severing the relationships that hold the remaining two thirds together.</p>
+        <span class="mono step__tag">Section view</span>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="wrap block reveal">
+  <div class="block__head">
+    <span class="mono mono--accent">03 — The takeaway</span>
+    <h2 class="display">How it grew me</h2>
+  </div>
+  <div class="block__body">
+    <blockquote class="quote">Modeling the parts was the easy half. Deciding what order to build them in was the engineering.</blockquote>
+    <p>I rebuilt the compressor stage twice because I mated it to the wrong reference early and every downstream part inherited the mistake. That is a lesson you only learn by paying for it: in a twenty-three part assembly, a bad decision on part four is not a part-four problem, it is a parts-five-through-twenty-three problem. Now I plan the mate scheme on paper before I open a sketch.</p>
+    <p>The section cut taught me the other half — that a model is a communication tool, and an assembly nobody can read is only half finished.</p>
+  </div>
+</section>
+<section class="specs">
+  <div class="wrap specs__inner reveal">
+    <span class="mono">Specification</span>
+    <dl>
+      <div><dt class="mono">Software</dt><dd>SolidWorks 2026</dd></div>
+      <div><dt class="mono">Part count</dt><dd>23</dd></div>
+      <div><dt class="mono">Subassemblies</dt><dd>Fan · compressor · combustor · turbine</dd></div>
+      <div><dt class="mono">Section</dt><dd>One-third cut, relationships preserved</dd></div>
+      <div><dt class="mono">Viewer</dt><dd>SketchFab — orbit and zoom</dd></div>
+      <div><dt class="mono">Files</dt><dd>STEP / SLDASM on request</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="next">
+  <div class="wrap next__inner">
+    <a class="next__card" href="inline-four-engine.html">
+      <span class="mono">Next project — 02 / 04</span>
+      <span class="next__title">Inline Four Engine</span>
+      <p>Block, pistons, crankshaft, valvetrain — mated so the four-stroke cycle actually resolves.</p>
+      <span class="go">Read the case study →</span>
+    </a>
+    <div class="next__cta">
+      <span class="mono">Or skip ahead</span>
+      <h2>Want me building this for your team?</h2>
+      <p>Seeking a Summer 2027 mechanical engineering internship — open to earlier terms.</p>
+      <div class="actions">
+        <a class="btn btn--light" href="../index.html#contact">Get in touch</a>
+        <a class="btn btn--outline-light" href="../resume.html">Résumé (PDF)</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div>
+        <a class="footer__mark" href="../index.html">Cayden Clemmer</a>
+        <span class="mono" style="display:block;margin-top:8px">Mechanical design · Alexandria, VA</span>
+      </div>
+      <nav class="footer__nav" aria-label="Footer">
+        <a class="nav__link" href="../index.html#work">Work</a>
+        <a class="nav__link" href="../index.html#about">About</a>
+        <a class="nav__link" href="../index.html#certifications">Certifications</a>
+        <a class="nav__link" href="../resume.html">Résumé</a>
+        <a class="nav__link" href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <span class="mono">© <span data-year>2026</span> Cayden Clemmer</span>
+      <span class="mono">Case study 01 of 04</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>
